@@ -1,0 +1,39 @@
+﻿namespace PSW.fileNshare
+{
+
+    internal static class Branding
+    {
+#if (DEBUG)
+        private const string DevSuffix = "-Dev";
+#else
+        private const string DevSuffix = "";
+#endif
+
+        public const string CompanyName = /*COMPANY*/"Perceptive Software"/*COMPANY*/;
+        public const string CompanyNameTechnical = /*COMPANY_TECHNICAL*/"Perceptive"/*COMPANY_TECHNICAL*/ + DevSuffix;
+        public const string CompanyWebsite = /*COMPANY_WEBSITE*/"http://www.perceptivesoftware.com"/*COMPANY_WEBSITE*/;
+
+        public const string ProductName = /*PRODUCT*/"SDB"/*PRODUCT*/;
+        public const string ProductNameTechnicalFilesystem = /*PRODUCT_TECHNICAL_FILESYSTEM*/"SDB"/*PRODUCT_TECHNICAL_FILESYSTEM*/ + DevSuffix;
+        public const string ProductNameTechnicalMenu = /*PRODUCT_TECHNICAL_MENU*/"SDB"/*PRODUCT_TECHNICAL_MENU*/ + DevSuffix;
+        public const string ProductNameTechnicalRegistry = /*PRODUCT_TECHNICAL_REGISTRY*/"SDB"/*PRODUCT_TECHNICAL_REGISTRY*/ + DevSuffix;
+        public const string ProductVersion = /*PRODUCT_VERSION*/"16.6.61"/*PRODUCT_VERSION*/;
+
+        public const string ProductSupportEmail = /*PRODUCT_SUPPORT_EMAIL*/"support@sdb.de"/*PRODUCT_SUPPORT_EMAIL*/;
+        public const string ProductFeedbackUrl = /*PRODUCT_FEEDBACK_URL*/"http://feedback.sdb.de/"/*PRODUCT_SUPPORT_EMAIL*/;
+        public const string ProductWebsiteUrl = /*PRODUCT_WEBSITE_URL*/"https://service.sdb.de"/*PRODUCT_WEBSITE_URL*/;
+
+        public const string Copyright = /*COPYRIGHT*/"Copyright © SAPERION AG 2013 - 2014"/*COPYRIGHT*/;
+
+        public const string DefaultRemoteHost = /*DEFAULT_REMOTE_HOST*/"https://fnsdev.psft.co"/*DEFAULT_REMOTE_HOST*/;
+        public const string DefaultRemoteService = /*DEFAULT_REMOTE_SERVICE*/"/fns-service"/*DEFAULT_REMOTE_SERVICE*/;
+        public const string DefaultRemoteClient = /*DEFAULT_REMOTE_CLIENT*/"/"/*DEFAULT_REMOTE_CLIENT*/;
+        public const string DefaultAuthenticationPath = /*DEFAULT_AUTHENTICATION_PATH*/"/apps/web/AuthProvider"/*DEFAULT_AUTHENTICATION_PATH*/;
+        public const string DefaultAutoUpdatePath = /*DEFAULT_AUTO_UPDATE_PATH*/"/apps/windows/desktop"/*DEFAULT_AUTO_UPDATE_PATH*/;
+
+        public const string ProtocolScheme = /*PROTOCOL_SCHEME*/"sdb"/*PROTOCOL_SCHEME*/ + DevSuffix;
+        public const string PipeName = /*PIPE_NAME*/"EBAD8733-2740-45D3-80D6-551838361EE9"/*PIPE_NAME*/;
+        public const string InstanceMutex = /*INSTANCE_MUTEX*/"3B37E384-0F55-4299-B065-8935299B131A"/*INSTANCE_MUTEX*/;
+        public const string BuildRevision = /*BUILD_REVISION*/"0"/*BUILD_REVISION*/;
+    }
+}
